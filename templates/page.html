@@ -1,0 +1,16 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}{{ page_title[id] }} - {{ site_title }}{% endblock title %}
+
+{% block head -%}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/'~id~'.css') }}">
+{%- endblock %}
+
+{% block header -%}
+{% include 'layouts/header-page.html' %}
+{% endblock header %}
+
+{% block content -%}
+{% include 'contents/'~id~'.html' %}
+{% endblock content %}

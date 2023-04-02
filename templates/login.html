@@ -1,0 +1,23 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}{{ page_title[id] }} - {{ site_title }}{% endblock title %}
+
+{% block head -%}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/login.css') }}">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v16.0" nonce="BoPAhJGc"></script>
+<script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
+{%- endblock %}
+
+{% block header -%}
+{% include 'layouts/header-page.html' %}
+{% endblock header %}
+
+{% block content -%}
+{% include 'contents/login.html' %}
+{% endblock content %}
+
+{% block footer -%}
+{% include 'layouts/footer.html' %}
+{%- endblock footer %}
+
