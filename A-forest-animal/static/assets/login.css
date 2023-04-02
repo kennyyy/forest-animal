@@ -1,0 +1,55 @@
+.login-container {
+  padding: 2em;
+  box-sizing: border-box;
+}
+.login-form {
+  width: fit-content;
+  margin: 0 auto;
+}
+.login-input {
+  background-color: #eee;
+  border: 0;
+  border-bottom: 1px solid #888;
+  font: inherit;
+  line-height: 2;
+  margin: 0.5em 0;
+  width: 18em;
+}
+.login-submit-container {
+  text-align: center;
+  margin: 2em;
+}
+.login-submit {
+  width: 100%;
+}
+.login-3rd-parties {
+  margin: 2em 0;
+}
+.login-3rd-party {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-3rd-party-link:active {
+  background-color: transparent;
+  filter: brightness(0.75);
+}
+.login-3rd-party-link,
+.login-3rd-party-button {
+  display: block;
+}
+.fb-login-button {
+  height: 20px;
+}
+.login-sub {
+  text-align: center;
+  font-size: 0.875em;
+  color: #444;
+}
+.login-sub a {
+  color: inherit;
+}
+.login-sub a:active {
+  background-color: #000;
+  color: #fff;
+}
